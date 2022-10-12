@@ -1,1 +1,21 @@
+.searchBar{
+    height: 4rem;
+}
+.magnifying-glass-icon{
+    height: 30px;
+}
+.input{
+    margin: 0.5rem;
+    width: 300px;
+}
+
+.selector{
+    margin: 0.5rem;
+    width: 200px;
+}
+
+.selector option{
+    margin: 0.2rem;
+}
+
 

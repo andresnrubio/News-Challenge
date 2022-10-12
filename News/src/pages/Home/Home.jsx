@@ -3,6 +3,7 @@ import React, { useRef, useCallback, useState } from 'react'
 import { useNews } from '../../hooks/useNews'
 import NewsCard from '../../components/NewsCard/NewsCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import Header from '../../components/Header/Header'
 
 const Home = () => {
     const [filter, setFilter] = useState({
@@ -38,9 +39,10 @@ const Home = () => {
     
     return (
         <>
+        <Header/>
             <SearchBar handleSearch={handleSearch} />
             {/* <button onClick={nextPage}>Proxima pagina</button> */}
-            <div className="container">
+            <div className='container'>
                 {news.length > 0 ? news.map((data, index) => {
                     if (index + 1 === news.length) {
                         return (
@@ -52,7 +54,10 @@ const Home = () => {
                     }
                 }) : <></>}
             </div>
-            <div className='Loading'>{isLoading && 'Loading...'}</div>
+            
+            <div className='container loading'>{isLoading && <div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>}</div>
             <div>{error && 'Error'}</div>
         </>
     )

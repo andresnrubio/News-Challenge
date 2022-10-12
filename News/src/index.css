@@ -17,6 +17,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  justify-content: center;
+  background-color: #fcfcfc;
 }
 a {
   font-weight: 500;

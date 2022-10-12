@@ -1,0 +1,11 @@
+.header h1{
+margin: 1rem 0 0 0;
+}
+
+
+.line{
+    background-color: rgb(75, 75, 75);
+    height: 0.5px;
+    width: 75%;
+    margin-bottom: 0.5rem;
+}

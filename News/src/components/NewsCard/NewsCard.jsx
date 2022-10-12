@@ -5,7 +5,7 @@ import React from 'react'
 const NewsCard = (props) => {
 
     return (
-        <div className="card">
+        <div className="cardAlt">
         <a href={props.new.url}> 
             <img src={props.new.urlToImage} alt="Image Not Found" onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
