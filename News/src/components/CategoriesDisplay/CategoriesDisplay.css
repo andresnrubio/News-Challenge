@@ -1,0 +1,9 @@
+.category{
+    all: unset;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.category:hover{
+color: #198754;
+cursor: pointer;
+}

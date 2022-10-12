@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
     <div className="container-fluid d-flex flex-column align-items-center header">
-      <h1>News</h1>
+      <a href="/index"><h1>News</h1></a>
       <div className="line"></div>
     </div>
     </>
